@@ -26,10 +26,17 @@ public class GoogleStep {
     }
 
     @E("clico no botao OK")
-    public void clicoNoBotaoOK() {
+    public void clicoNoBotaoOK() throws InterruptedException {
+        googleFuncionalidade.clicarNoBotao();
     }
 
     @Entao("visualizo o resultado da minha pesquisa")
     public void visualizoOResultadoDaMinhaPesquisa() {
+        googleFuncionalidade.visualizarResultado();
+    }
+
+    @E("clico no botao OK {int}")
+    public void clicoNoBotaoOK(int arg0) throws InterruptedException {
+        googleFuncionalidade.clicarNoBotao2();
     }
 }
