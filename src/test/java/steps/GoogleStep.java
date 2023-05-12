@@ -20,9 +20,9 @@ public class GoogleStep {
     public GoogleStep() throws Exception {
     }
 
-    @Dado("que estou logado no google")
-    public void queEstouLogadoNoGoogle() throws InterruptedException {
-        loginFuncionalidade.loginGoogle();
+    @Dado("que estou logado no {string}")
+    public void queEstouLogadoNoGoogle(String site) throws InterruptedException, IOException {
+        loginFuncionalidade.loginGoogle(site);
     }
 
     @Quando("pesquiso por alguma palavra chamada {string}")

@@ -3,11 +3,11 @@
     "line": 7,
     "elements": [
       {
-        "start_timestamp": "2023-05-12T15:40:07.728Z",
+        "start_timestamp": "2023-05-12T18:02:32.946Z",
         "before": [
           {
             "result": {
-              "duration": 1521569100,
+              "duration": 1279198000,
               "status": "passed"
             },
             "match": {
@@ -16,13 +16,13 @@
           }
         ],
         "line": 10,
-        "name": "Validar pesquisa no google",
+        "name": "Validar se a creatina está disponivel no site da growth",
         "description": "",
-        "id": "executar-testes-automatizados-no-google;validar-pesquisa-no-google",
+        "id": "executar-diferentes-testes-automatizados;validar-se-a-creatina-está-disponivel-no-site-da-growth",
         "after": [
           {
             "result": {
-              "duration": 183002600,
+              "duration": 154001600,
               "status": "passed"
             },
             "match": {
@@ -35,79 +35,102 @@
         "steps": [
           {
             "result": {
-              "duration": 781086300,
+              "duration": 4808362100,
               "status": "passed"
             },
             "line": 11,
-            "name": "que estou logado no google",
+            "name": "que estou logado no \"Growth\"",
             "match": {
-              "location": "steps.GoogleStep.queEstouLogadoNoGoogle()"
+              "arguments": [
+                {
+                  "val": "\"Growth\"",
+                  "offset": 20
+                }
+              ],
+              "location": "steps.GoogleStep.queEstouLogadoNoGoogle(java.lang.String)"
             },
             "keyword": "Dado "
           },
           {
             "result": {
-              "duration": 666653100,
+              "duration": 2660974700,
               "status": "passed"
             },
             "line": 12,
-            "name": "pesquiso por alguma palavra chamada \"Fast2mine\"",
+            "name": "insiro no campo \"Encontre Suplementos\" o valor \"Creatina (250g) (Creapure®) - Growth Supplements\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Fast2mine\"",
-                  "offset": 36
+                  "val": "\"Encontre Suplementos\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"Creatina (250g) (Creapure®) - Growth Supplements\"",
+                  "offset": 47
                 }
               ],
-              "location": "steps.GoogleStep.pesquisoPorAlgumaPalavra(java.lang.String)"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "clico no botao OK",
-            "match": {
-              "location": "steps.GoogleStep.clicoNoBotaoOK()"
+              "location": "steps.GrowthStep.insiroNoCampoOValor(java.lang.String,java.lang.String)"
             },
             "keyword": "E "
           },
           {
             "result": {
-              "duration": 2524172600,
+              "duration": 7726847600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "seleciono o produto \"Creatina (250g) (Creapure®) - Growth Supplements\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Creatina (250g) (Creapure®) - Growth Supplements\"",
+                  "offset": 20
+                }
+              ],
+              "location": "steps.GrowthStep.selecionoOProduto(java.lang.String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 714998700,
               "status": "passed"
             },
             "line": 14,
-            "name": "visualizo o resultado da minha pesquisa",
+            "name": "visualizo que a creatina esta \"Indisponivel\"",
             "match": {
-              "location": "steps.GoogleStep.visualizoOResultadoDaMinhaPesquisa()"
+              "arguments": [
+                {
+                  "val": "\"Indisponivel\"",
+                  "offset": 30
+                }
+              ],
+              "location": "steps.GrowthStep.visualizoQueACreatinaEsta(java.lang.String)"
             },
             "keyword": "Entao "
           }
         ],
         "tags": [
           {
-            "name": "@todos"
+            "name": "@all"
           },
           {
             "name": "@web"
           },
           {
-            "name": "@CT-01"
+            "name": "@CT-02"
           }
         ]
       }
     ],
-    "name": "Executar testes automatizados no google",
+    "name": "Executar diferentes testes automatizados",
     "description": "",
-    "id": "executar-testes-automatizados-no-google",
+    "id": "executar-diferentes-testes-automatizados",
     "keyword": "Funcionalidade",
-    "uri": "file:src/test/resources/features/google.feature",
+    "uri": "file:src/test/resources/features/Growth.feature",
     "tags": [
       {
-        "name": "@todos",
+        "name": "@all",
         "type": "Tag",
         "location": {
           "line": 6,

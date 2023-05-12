@@ -21,7 +21,7 @@ import java.io.FileNotFoundException;
         features = {"./src/test/resources/features"},
         glue = {"steps", "configuration",
                 "commons", "bean"},
-        tags = "@CT-01")
+        tags = "@CT-02")
 
 public class RunTest extends BaseTest {
 
