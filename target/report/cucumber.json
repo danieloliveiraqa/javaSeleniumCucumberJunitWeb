@@ -3,11 +3,11 @@
     "line": 7,
     "elements": [
       {
-        "start_timestamp": "2023-03-01T18:01:15.183Z",
+        "start_timestamp": "2023-05-12T15:20:02.001Z",
         "before": [
           {
             "result": {
-              "duration": 1296455700,
+              "duration": 1463839400,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 160001800,
+              "duration": 163997500,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 913164300,
+              "duration": 771786100,
               "status": "passed"
             },
             "line": 11,
@@ -47,19 +47,25 @@
           },
           {
             "result": {
-              "duration": 69134100,
+              "duration": 622467400,
               "status": "passed"
             },
             "line": 12,
-            "name": "pesquiso por alguma palavra",
+            "name": "pesquiso por alguma palavra chamada \"Fast2mine\"",
             "match": {
-              "location": "steps.GoogleStep.pesquisoPorAlgumaPalavra()"
+              "arguments": [
+                {
+                  "val": "\"Fast2mine\"",
+                  "offset": 36
+                }
+              ],
+              "location": "steps.GoogleStep.pesquisoPorAlgumaPalavra(java.lang.String)"
             },
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 2654664100,
+              "duration": 473900,
               "status": "passed"
             },
             "line": 13,
@@ -71,7 +77,7 @@
           },
           {
             "result": {
-              "duration": 44996600,
+              "duration": 2654811400,
               "status": "passed"
             },
             "line": 14,
@@ -91,105 +97,6 @@
           },
           {
             "name": "@CT-01"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2023-03-01T18:01:20.439Z",
-        "before": [
-          {
-            "result": {
-              "duration": 732896600,
-              "status": "passed"
-            },
-            "match": {
-              "location": "configuration.Hooks.beforeScenarioWeb()"
-            }
-          }
-        ],
-        "line": 17,
-        "name": "Validar pesquisa no google 2",
-        "description": "",
-        "id": "executar-testes-automatizados-no-google;validar-pesquisa-no-google-2",
-        "after": [
-          {
-            "result": {
-              "duration": 165999700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "configuration.Hooks.afterScenarioWeb()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Cenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 858355500,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "que estou logado no google",
-            "match": {
-              "location": "steps.GoogleStep.queEstouLogadoNoGoogle()"
-            },
-            "keyword": "Dado "
-          },
-          {
-            "result": {
-              "duration": 71348000,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "pesquiso por alguma palavra",
-            "match": {
-              "location": "steps.GoogleStep.pesquisoPorAlgumaPalavra()"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "duration": 497800,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "clico no botao OK 2",
-            "match": {
-              "arguments": [
-                {
-                  "val": "2",
-                  "offset": 18
-                }
-              ],
-              "location": "steps.GoogleStep.clicoNoBotaoOK(int)"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "error_message": "org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document\n  (Session info: chrome\u003d110.0.5481.178)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DANIEL-OLIVEIRA\u0027, ip: \u0027192.168.1.9\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.16\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\\Users\\Daniel\\AppData\\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:62187}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: e6060ccbcb55fd3f2a20701c4547a382\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:326)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy21.isDisplayed(Unknown Source)\r\n\tat funcionalidades.GoogleFuncionalidade.visualizarResultado(GoogleFuncionalidade.java:26)\r\n\tat steps.GoogleStep.visualizoOResultadoDaMinhaPesquisa(GoogleStep.java:35)\r\n\tat ✽.visualizo o resultado da minha pesquisa(file:///C:/Users/Daniel/Documents/WorkSpaces/Java/JavaSeleniumCucumberJunit/./src/test/resources/features/google.feature:21)\r\n",
-              "duration": 137108800,
-              "status": "failed"
-            },
-            "line": 21,
-            "name": "visualizo o resultado da minha pesquisa",
-            "match": {
-              "location": "steps.GoogleStep.visualizoOResultadoDaMinhaPesquisa()"
-            },
-            "keyword": "Entao "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@todos"
-          },
-          {
-            "name": "@web"
-          },
-          {
-            "name": "@CT-02"
           }
         ]
       }

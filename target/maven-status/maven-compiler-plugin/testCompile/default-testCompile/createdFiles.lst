@@ -1,0 +1,9 @@
+runTest\RunTest.class
+report\HTMLReport.class
+steps\GoogleStep.class
+funcionalidades\CommonFuncionalidade.class
+pages\LoginPage.class
+screenshots\Screenshot.class
+funcionalidades\LoginFuncionalidade.class
+funcionalidades\GoogleFuncionalidade.class
+report\ReportPDF.class

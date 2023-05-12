@@ -10,14 +10,14 @@ public class LoginPage {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = "//input[@name='q']")
+    @FindBy(xpath = "//textarea[@id='APjFqb']")
     private WebElement campoPesquisa;
 
-    @FindBy(xpath = "/html/body/div[1]/div[3]/form/div[1]/div[1]/div[4]/center/input[1]")
+    @FindBy(xpath = "/html/body/div[1]/div[3]/form/div[1]/div[1]/div[2]/div[2]/div[5]/center/input[1]")
     private WebElement botaoOK;
 
-    @FindBy(xpath = "//span[.='Gusttavo Lima']")
-    private WebElement spanGustavoLima;
+    @FindBy(xpath = "//h3[contains(text(),'Fast2 Mine: Home')]")
+    private WebElement spanfas2t2mine;
 
     public WebElement getCampoPesquisa() {
         return campoPesquisa;
@@ -27,7 +27,7 @@ public class LoginPage {
         return botaoOK;
     }
 
-    public WebElement getSpanGustavoLima() {
-        return spanGustavoLima;
+    public WebElement getSpanfas2t2mine() {
+        return spanfas2t2mine;
     }
 }

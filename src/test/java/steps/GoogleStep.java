@@ -1,11 +1,16 @@
 package steps;
 
+import com.itextpdf.text.BadElementException;
+import com.itextpdf.text.DocumentException;
 import funcionalidades.GoogleFuncionalidade;
 import funcionalidades.LoginFuncionalidade;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.E;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
+
+import java.awt.*;
+import java.io.IOException;
 
 public class GoogleStep {
 
@@ -20,18 +25,18 @@ public class GoogleStep {
         loginFuncionalidade.loginGoogle();
     }
 
-    @Quando("pesquiso por alguma palavra")
-    public void pesquisoPorAlgumaPalavra() throws InterruptedException {
-        googleFuncionalidade.digitarNoCampo();
+    @Quando("pesquiso por alguma palavra chamada {string}")
+    public void pesquisoPorAlgumaPalavra(String nome) throws InterruptedException, IOException, DocumentException {
+        googleFuncionalidade.digitarNoCampo(nome);
     }
 
     @E("clico no botao OK")
-    public void clicoNoBotaoOK() throws InterruptedException {
+    public void clicoNoBotaoOK() throws InterruptedException, AWTException, IOException {
         googleFuncionalidade.clicarNoBotao();
     }
 
     @Entao("visualizo o resultado da minha pesquisa")
-    public void visualizoOResultadoDaMinhaPesquisa() {
+    public void visualizoOResultadoDaMinhaPesquisa() throws IOException {
         googleFuncionalidade.visualizarResultado();
     }
 

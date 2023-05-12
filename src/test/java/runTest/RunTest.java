@@ -1,28 +1,38 @@
 package runTest;
 
+import com.itextpdf.text.DocumentException;
 import commons.BaseTest;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.AfterClass;
+import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
+import report.ReportPDF;
 
-import static report.ReportPDF.gerarPDF;
-import static report.ReportPDF2.gerarPDF2;
+import java.io.FileNotFoundException;
+
 
 @RunWith(Cucumber.class)
 @CucumberOptions(monochrome = true,
         dryRun = false,
         snippets = CucumberOptions.SnippetType.CAMELCASE,
-        plugin = {"pretty", "json:target/cucumber.json", "json:target/report/cucumber.json"},
+        plugin = {"pretty", "json:target/report/cucumber.json"},
         features = {"./src/test/resources/features"},
         glue = {"steps", "configuration",
                 "commons", "bean"},
-        tags = "@todos")
+        tags = "@CT-01")
 
 public class RunTest extends BaseTest {
-    @AfterClass
+
+    @BeforeClass
     public static void report() {
-        gerarPDF2();
+        ReportPDF.initReport("report.pdf");
+    }
+
+
+    @AfterClass
+    public static void report2() {
+        ReportPDF.closeReport();
     }
 }
