@@ -18,7 +18,7 @@ public class GrowthPage {
         return campoEncontreSuplementos;
     }
 
-    @FindBy(xpath = "//div[@class='categoriaProdItem-nomeGrade']//h3[.='Creatina (250g) (Creapure®) - Growth Supplements']")
+    @FindBy(xpath = "/html/body/main/article/section[5]/div/div[2]/div[2]/div/div/div[1]/div[1]/a/img")
     private WebElement creatina;
 
     public WebElement getCreatina() {
@@ -37,6 +37,13 @@ public class GrowthPage {
 
     public WebElement getImgBuscar() {
         return imgBuscar;
+    }
+
+    @FindBy(xpath = "//div[@class='botao-de-compra']//button[@class='botaoComprar']")
+    private WebElement produtoDisponivel;
+
+    public WebElement getProdutoDisponivel() {
+        return produtoDisponivel;
     }
 }
 

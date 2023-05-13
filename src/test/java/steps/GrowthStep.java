@@ -30,7 +30,7 @@ public class GrowthStep {
     }
 
     @Entao("visualizo que a creatina esta {string}")
-    public void visualizoQueACreatinaEsta(String status) throws IOException {
+    public void visualizoQueACreatinaEsta(String status) throws IOException, InterruptedException {
         growthFuncionalidade.visualizoProduto(status);
     }
 }
