@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
 
-    protected static WebDriver webDriver;
+    public static WebDriver webDriver;
     protected static WebDriverWait wait;
 
 
