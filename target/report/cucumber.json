@@ -3,11 +3,11 @@
     "line": 7,
     "elements": [
       {
-        "start_timestamp": "2023-05-15T02:30:10.343Z",
+        "start_timestamp": "2023-10-10T20:30:24.141Z",
         "before": [
           {
             "result": {
-              "duration": 1816919600,
+              "duration": 1626000900,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 10,
-        "name": "Validar se a creatina está disponivel no site da growth",
+        "line": 16,
+        "name": "Validar pesquisa no google",
         "description": "",
-        "id": "executar-diferentes-testes-automatizados;validar-se-a-creatina-está-disponivel-no-site-da-growth",
+        "id": "executar-diferentes-testes-automatizados;validar-pesquisa-no-google",
         "after": [
           {
             "result": {
-              "duration": 198502400,
+              "duration": 185994100,
               "status": "passed"
             },
             "match": {
@@ -35,15 +35,15 @@
         "steps": [
           {
             "result": {
-              "duration": 7634489400,
+              "duration": 2259450200,
               "status": "passed"
             },
-            "line": 11,
-            "name": "que estou logado no \"Growth\"",
+            "line": 17,
+            "name": "que estou logado no \"Google\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Growth\"",
+                  "val": "\"Google\"",
                   "offset": 20
                 }
               ],
@@ -53,72 +53,26 @@
           },
           {
             "result": {
-              "duration": 2142987200,
+              "duration": 5096259000,
               "status": "passed"
             },
-            "line": 12,
-            "name": "insiro no campo \"Encontre Suplementos\" o valor \"Creatina (250g) (Creapure®) - Growth Supplements\"",
+            "line": 18,
+            "name": "validar que consigo manipular varias chaves ao digitar no campo",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Encontre Suplementos\"",
-                  "offset": 16
-                },
-                {
-                  "val": "\"Creatina (250g) (Creapure®) - Growth Supplements\"",
-                  "offset": 47
-                }
-              ],
-              "location": "steps.GrowthStep.insiroNoCampoOValor(java.lang.String,java.lang.String)"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 7485602400,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "seleciono o produto \"Creatina (250g)\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Creatina (250g)\"",
-                  "offset": 20
-                }
-              ],
-              "location": "steps.GrowthStep.selecionoOProduto(java.lang.String)"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "duration": 5314417800,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "visualizo que a creatina esta \"Indisponivel\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Indisponivel\"",
-                  "offset": 30
-                }
-              ],
-              "location": "steps.GrowthStep.visualizoQueACreatinaEsta(java.lang.String)"
+              "location": "steps.GoogleStep.validarQueConsigoManipularVariasChavesAoDigitarNoCampo()"
             },
             "keyword": "Entao "
           }
         ],
         "tags": [
           {
-            "name": "@all"
+            "name": "@todos"
           },
           {
             "name": "@web"
           },
           {
-            "name": "@CT-02"
+            "name": "@CT-2730"
           }
         ]
       }
@@ -127,10 +81,10 @@
     "description": "",
     "id": "executar-diferentes-testes-automatizados",
     "keyword": "Funcionalidade",
-    "uri": "file:src/test/resources/features/Growth.feature",
+    "uri": "file:src/test/resources/features/google.feature",
     "tags": [
       {
-        "name": "@all",
+        "name": "@todos",
         "type": "Tag",
         "location": {
           "line": 6,
