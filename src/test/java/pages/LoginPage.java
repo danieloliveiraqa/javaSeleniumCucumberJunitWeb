@@ -26,6 +26,14 @@ public class LoginPage {
     @FindBy(xpath = "//textarea[@class='gLFyf']")
     private WebElement pesquisarGoogle;
 
+    @FindBy(xpath = "(//input[@name='btnK'])[1]")
+    private WebElement pesquisarGoogle2;
+
+
+    public WebElement getPesquisarGoogle2() {
+        return pesquisarGoogle2;
+    }
+
     @FindBy(xpath = "(//h3[.='Hyundai Motor Brasil'])[1]")
     private WebElement linkHyundai;
 

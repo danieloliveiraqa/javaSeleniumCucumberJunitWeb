@@ -6,6 +6,12 @@
 @todos
 Funcionalidade: Executar diferentes testes automatizados
 
+  @web @CT-01
+  Cenario: Validar pesquisa no google
+    Dado que estou logado no "Google"
+    Quando pesquiso por alguma palavra chamada "Fast2mine"
+    E clico no botao OK
+    Entao visualizo o resultado da minha pesquisa
 
   @rest
   Cenario: Validar pesquisa no google
@@ -54,15 +60,6 @@ Funcionalidade: Executar diferentes testes automatizados
     Dado que estou logado no "Mediafire"
     Quando clico no botao "Baixar"
     Entao visualizo que o download do arquivo foi feito com sucesso
-
-  @web @CT-01
-  Cenario: Validar pesquisa no google
-    Dado que estou logado no "Google"
-    Quando pesquiso por alguma palavra chamada "Fast2mine"
-    E clico no botao OK
-    Entao visualizo o resultado da minha pesquisa
-
-
 
   @web @CT-032131236
   Esquema do Cenario: validar ingredientes

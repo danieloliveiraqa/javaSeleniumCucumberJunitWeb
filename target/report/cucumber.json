@@ -3,11 +3,11 @@
     "line": 7,
     "elements": [
       {
-        "start_timestamp": "2023-10-10T20:30:24.141Z",
+        "start_timestamp": "2023-12-08T23:39:43.041Z",
         "before": [
           {
             "result": {
-              "duration": 1626000900,
+              "duration": 1639000700,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 16,
+        "line": 10,
         "name": "Validar pesquisa no google",
         "description": "",
         "id": "executar-diferentes-testes-automatizados;validar-pesquisa-no-google",
         "after": [
           {
             "result": {
-              "duration": 185994100,
+              "duration": 164240800,
               "status": "passed"
             },
             "match": {
@@ -35,10 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 2259450200,
+              "duration": 995236300,
               "status": "passed"
             },
-            "line": 17,
+            "line": 11,
             "name": "que estou logado no \"Google\"",
             "match": {
               "arguments": [
@@ -53,13 +53,43 @@
           },
           {
             "result": {
-              "duration": 5096259000,
+              "duration": 437792700,
               "status": "passed"
             },
-            "line": 18,
-            "name": "validar que consigo manipular varias chaves ao digitar no campo",
+            "line": 12,
+            "name": "pesquiso por alguma palavra chamada \"Fast2mine\"",
             "match": {
-              "location": "steps.GoogleStep.validarQueConsigoManipularVariasChavesAoDigitarNoCampo()"
+              "arguments": [
+                {
+                  "val": "\"Fast2mine\"",
+                  "offset": 36
+                }
+              ],
+              "location": "steps.GoogleStep.pesquisoPorAlgumaPalavra(java.lang.String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 212998700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "clico no botao OK",
+            "match": {
+              "location": "steps.GoogleStep.clicoNoBotaoOK()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 1523064800,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "visualizo o resultado da minha pesquisa",
+            "match": {
+              "location": "steps.GoogleStep.visualizoOResultadoDaMinhaPesquisa()"
             },
             "keyword": "Entao "
           }
@@ -72,7 +102,7 @@
             "name": "@web"
           },
           {
-            "name": "@CT-2730"
+            "name": "@CT-01"
           }
         ]
       }

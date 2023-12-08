@@ -58,6 +58,8 @@ public class GoogleFuncionalidade extends BaseTest {
     public void clicarNoBotao() throws InterruptedException, AWTException, IOException {
         Robot robot = new Robot();
         robot.keyPress(KeyEvent.VK_ENTER);
+
+        loginPage.getPesquisarGoogle2().click();
         //BufferedImage screenshot = Screenshot.takeScreenshot(webDriver);
         //ReportPDF.addScreenshot(screenshot);
 
