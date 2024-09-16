@@ -1,0 +1,12 @@
+pages\GrowthPage.class
+steps\GoogleStep.class
+funcionalidades\CommonFuncionalidade.class
+pages\LoginPage.class
+funcionalidades\LoginFuncionalidade.class
+funcionalidades\GoogleFuncionalidade.class
+funcionalidades\GrowthFuncionalidade.class
+runTest\RunTest.class
+report\HTMLReport.class
+steps\GrowthStep.class
+screenshots\Screenshot.class
+report\ReportPDF.class

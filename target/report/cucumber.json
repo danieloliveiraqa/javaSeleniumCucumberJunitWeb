@@ -1,13 +1,13 @@
 [
   {
-    "line": 6,
+    "line": 7,
     "elements": [
       {
-        "start_timestamp": "2023-03-01T14:02:01.942Z",
+        "start_timestamp": "2023-12-08T23:39:43.041Z",
         "before": [
           {
             "result": {
-              "duration": 1439502200,
+              "duration": 1639000700,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 9,
+        "line": 10,
         "name": "Validar pesquisa no google",
         "description": "",
-        "id": "executar-testes-automatizados-no-google;validar-pesquisa-no-google",
+        "id": "executar-diferentes-testes-automatizados;validar-pesquisa-no-google",
         "after": [
           {
             "result": {
-              "duration": 284498200,
+              "duration": 164240800,
               "status": "passed"
             },
             "match": {
@@ -35,33 +35,46 @@
         "steps": [
           {
             "result": {
-              "duration": 891500800,
+              "duration": 995236300,
               "status": "passed"
             },
-            "line": 10,
-            "name": "que estou logado no google",
+            "line": 11,
+            "name": "que estou logado no \"Google\"",
             "match": {
-              "location": "steps.GoogleStep.queEstouLogadoNoGoogle()"
+              "arguments": [
+                {
+                  "val": "\"Google\"",
+                  "offset": 20
+                }
+              ],
+              "location": "steps.GoogleStep.queEstouLogadoNoGoogle(java.lang.String)"
             },
             "keyword": "Dado "
           },
           {
             "result": {
-              "duration": 95498400,
+              "duration": 437792700,
               "status": "passed"
             },
-            "line": 11,
-            "name": "pesquiso por alguma palavra",
+            "line": 12,
+            "name": "pesquiso por alguma palavra chamada \"Fast2mine\"",
             "match": {
-              "location": "steps.GoogleStep.pesquisoPorAlgumaPalavra()"
+              "arguments": [
+                {
+                  "val": "\"Fast2mine\"",
+                  "offset": 36
+                }
+              ],
+              "location": "steps.GoogleStep.pesquisoPorAlgumaPalavra(java.lang.String)"
             },
             "keyword": "Quando "
           },
           {
             "result": {
+              "duration": 212998700,
               "status": "passed"
             },
-            "line": 12,
+            "line": 13,
             "name": "clico no botao OK",
             "match": {
               "location": "steps.GoogleStep.clicoNoBotaoOK()"
@@ -70,9 +83,10 @@
           },
           {
             "result": {
+              "duration": 1523064800,
               "status": "passed"
             },
-            "line": 13,
+            "line": 14,
             "name": "visualizo o resultado da minha pesquisa",
             "match": {
               "location": "steps.GoogleStep.visualizoOResultadoDaMinhaPesquisa()"
@@ -82,6 +96,9 @@
         ],
         "tags": [
           {
+            "name": "@todos"
+          },
+          {
             "name": "@web"
           },
           {
@@ -90,11 +107,20 @@
         ]
       }
     ],
-    "name": "Executar testes automatizados no google",
+    "name": "Executar diferentes testes automatizados",
     "description": "",
-    "id": "executar-testes-automatizados-no-google",
+    "id": "executar-diferentes-testes-automatizados",
     "keyword": "Funcionalidade",
     "uri": "file:src/test/resources/features/google.feature",
-    "tags": []
+    "tags": [
+      {
+        "name": "@todos",
+        "type": "Tag",
+        "location": {
+          "line": 6,
+          "column": 1
+        }
+      }
+    ]
   }
 ]
